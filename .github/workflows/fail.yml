@@ -10,8 +10,3 @@ jobs:
     steps:
       - name: Say what is about to happen
         run: echo "This job exits non-zero so the run ends in a failed state."
-
-      - name: Fail
-        run: |
-          echo "::error title=Intentional failure::Exiting 1 to fail this run"
-          exit 1
